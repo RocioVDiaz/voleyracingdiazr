@@ -1,0 +1,290 @@
+body {
+  margin: 0px;
+  background-color: rgba(179, 229, 245, 0.719);
+  background: center/100% url("../public/img/fondo3.jpg") no-repeat fixed;
+}
+header {
+  background: rgb(0, 0, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 4, 1) 6%,
+    rgba(58, 58, 66, 1) 57%,
+    rgba(238, 234, 234, 1) 100%
+  );
+  width: 100%;
+  margin: 0px;
+
+  display: flex;
+  position: fixed;
+
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 220%;
+  height: 100%;
+  list-style: none;
+  margin-left: 100px;
+}
+#nav li {
+  color: #fff !important;
+  padding: 0.5em 1.2em;
+  position: relative;
+}
+#nav {
+  margin-top: 0px;
+  margin-left: 50px;
+}
+#nav li:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: #3189ac9d;
+  transition: all 1.5s ease-in-out;
+  color: #fff !important;
+}
+#nav li:hover:before {
+  height: 100%;
+  color: #fff !important;
+}
+#nav li a {
+  position: relative;
+  top: 50px;
+}
+.twitter,
+.facebook,
+.instagram,
+.whatsapp {
+  width: 30px;
+}
+.grid-contenedor ul {
+  display: flex;
+  justify-content: center;
+  margin: 3px;
+  grid-area: redes;
+  list-style: none;
+  padding: 0%;
+}
+.grid-contenedor {
+  display: grid;
+  margin: 10px;
+  margin-right: 15px;
+  grid-template-rows: 60px 60px 42px;
+  grid-template-areas:
+    "h1 logo "
+    "h2 logo"
+    "redes redes";
+}
+h1 {
+  grid-area: h1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+h2 {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: h2;
+  align-items: center;
+}
+.img {
+  grid-area: logo;
+}
+.redes a {
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+}
+.escudo {
+  width: 80px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.logo {
+  color: rgb(0, 0, 0);
+  font-family: "Righteous", cursive;
+  font-size: 60px;
+  margin: 5px;
+}
+#tituloSecundario {
+  color: rgb(0, 0, 0);
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  margin: 5px;
+}
+.titulos {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+#nav li {
+  color: rgb(247, 247, 247);
+  border-bottom: none;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+p,
+h2 {
+  font-family: "Playfair Display", serif;
+  color: rgb(247, 247, 247);
+  font-weight: bold;
+  font-size: 20px;
+}
+li {
+  list-style-type: none;
+}
+.grid-container {
+  grid-template-rows: 200px auto auto;
+  display: grid;
+  grid-template-areas:
+    "header  header"
+    "main section"
+    "main  section"
+    "footer  footer";
+}
+
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.section {
+  grid-area: section;
+  display: flex;
+}
+.footer {
+  grid-area: footer;
+}
+.contacto {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: rgb(247, 247, 247);
+  width: 900px;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+footer {
+  background: rgb(0, 0, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 4, 1) 6%,
+    rgba(58, 58, 66, 1) 57%,
+    rgba(238, 234, 234, 1) 100%
+  );
+  height: 20px;
+
+  margin: 0px;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+.maps {
+  margin-left: 20%;
+  display: flex;
+  border: 6px solid rgba(0, 0, 0, 0.877);
+}
+.direccion {
+  background-color: rgba(0, 0, 0, 0.753);
+  text-align: left;
+  padding: 20px;
+  width: 400px;
+  position: absolute;
+  top: 500px;
+}
+section {
+  width: 400px;
+}
+main {
+  width: 500px;
+}
+.info {
+  display: flex;
+  justify-content: flex-end;
+}
+.horarios {
+  margin-left: 20%;
+  display: flex;
+  border: 6px solid rgba(0, 0, 0, 0.877);
+  width: 400px;
+}
+
+.master {
+  background: #023d8a48;
+}
+
+.prueba {
+  height: 120px;
+  position: relative;
+  width: 100px;
+}
+.prueba:before {
+  content: "";
+  float: left;
+}
+.content {
+  border-radius: 30%;
+  position: absolute;
+  vertical-align: middle;
+  z-index: 5000;
+  padding: 10px;
+}
+
+.prueba:hover .effect-1,
+.prueba:hover .effect-2 {
+  display: block;
+}
+
+.effect-1,
+.effect-2 {
+  border-radius: 30%;
+  mix-blend-mode: multiply;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.effect-1 {
+  animation: rotate 1.8s linear infinite;
+  background: #c0fdff;
+}
+
+.effect-2 {
+  animation: rotate 1.2s linear reverse infinite;
+  background: #bde0fe;
+}
+
+
+@keyframes rotate {
+  0% {
+    top: 0;
+    left: 8%;
+  }
+  25% {
+    top: 8%;
+    left: 0%;
+  }
+  50% {
+    top: 16%;
+    left: 8%;
+  }
+  75% {
+    top: 8%;
+    left: 16%;
+  }
+  100% {
+    top: 0;
+    left: 8%;
+  }
+}
