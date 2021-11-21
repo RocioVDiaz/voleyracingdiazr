@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  background: center/100% url("../public/img//fondo.jpg") no-repeat fixed;
+}
+.twitter,
+.facebook,
+.instagram,
+.whatsapp {
+  width: 25px;
+ 
+}
+li {
+    list-style: none;
+}
+.escudo {
+    width: 120px;
+    border: 2px solid black;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.891), 0 6px 20px 0 rgba(253, 253, 253, 0.857);
+  }
+  .carouselExampleFade, .carousel.slide.carousel-fade {
+    width: 320px;
+    height: 500px;
+    margin: 50px;
+  }
+  .carousel-item {
+    width: 250px;
+    height: 500px;
+
+  }
