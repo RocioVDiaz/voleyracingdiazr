@@ -1,6 +1,9 @@
 body {
   margin: 0px;
-  background: center/100% url("../public/img//fondo.jpg") no-repeat fixed;
+  background: center/100% url("../public/img//fondo.jpg") no-repeat fixed; 
+  background-repeat: repeat-y;
+  
+
 }
 .twitter,
 .facebook,
@@ -16,15 +19,119 @@ li {
     width: 120px;
     border: 2px solid black;
     margin-top: 10px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.891), 0 6px 20px 0 rgba(253, 253, 253, 0.857);
+   /* box-shadow: -2px 3px 26px 13px rgba(250,247,250,0.73);box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.891), 0 6px 20px 0 rgba(253, 253, 253, 0.857); */
+   box-shadow: -2px 2px 18px 5px rgba(250,247,250,0.73);
   }
-  .carouselExampleFade, .carousel.slide.carousel-fade {
-    width: 320px;
-    height: 500px;
-    margin: 50px;
+  .resultado {
+    width: 350px;
+    height: 515px;
+    
   }
-  .carousel-item {
-    width: 250px;
+  .res {
+
     height: 500px;
 
+  } 
+   /*.imgnormalizada {
+    height: 600px;
   }
+  .equipo{
+    height: 800px;
+  } */
+  .racing{
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  .voley{
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Electrolize', sans-serif;
+
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 70px;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+ 
+}
+
+.menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #50c2ec, #ffffff, #50c2ec);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.menu[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+.tit{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.resultados{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+.profesores{
+  background-color: rgba(0, 0, 0, 0.829);
+
+}
+.card{
+  background-color: rgba(6, 175, 175, 0.856);
+  color:white;
+  font-family: 'Electrolize', sans-serif;
+}
+.desc{
+  background-color: rgba(0, 0, 0, 0.904);
+  color:white;
+  font-family: 'Electrolize', sans-serif;
+  font-weight: bold;
+}
+.racing{
+  color:#50c2ec;
+  font-size: 17px;;
+}
