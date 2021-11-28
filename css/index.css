@@ -1,7 +1,9 @@
 body {
   margin: 0px;
-  background: center/100% url("../public/img//fondo.jpg") no-repeat fixed;
+  background: center/100% url("../public/img//fondo.jpg") no-repeat fixed; 
   background-repeat: repeat-y;
+  
+
 }
 /* escudo */
 .log{
@@ -23,6 +25,7 @@ svg:hover
   font-weight: bolder;
 
 }
+
 
 /* efectomenu */
 ul {
@@ -73,49 +76,47 @@ a {
 .menu[data-animation="center"] a::before {
   transform-origin: center;
 }
-
-/* tarjetas de camiseta */
-  
-.card-body {
-  background-color: rgba(6, 175, 175, 0.856);
-  border: none;
-  font-family: 'Electrolize', sans-serif;
-
+ /* tabla resultados */
+.resultado {
+  width: 350px;
+  height: 515px;  
 }
-.camiseta {
-  
-  background-color: rgba(6, 175, 175, 0.856);
-}
-.camiseta:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  box-shadow: 0 0 30px rgb(255, 255, 255);
-
-  border-radius: 20px;
-  transition-duration: 1s;
-}
-/* descripcion */
-.btn{
-background-color: rgba(6, 175, 175, 0.96);
-color: rgb(255, 255, 255);
-font-family: 'Electrolize', sans-serif;
-}
-.bg{
-background-color: rgba(0, 0, 0, 0.837);
-}
-.info{
-font-family: 'Electrolize', sans-serif;
-}
-.titulo{
-  font-size: 30px;
-}
-
-.indumentaria {
-  font-size: 30px;
+.resultados{
   font-family: 'Graduate', cursive;
-  color: white;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
 }
+.res {
+  height: 500px;
+} 
+/* titulo */
 
+.tit{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+/* profes */
+.profesores{
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.tarjeta{
+  background-color: rgba(6, 175, 175, 0.856);
+  color:white;
+  font-family: 'Electrolize', sans-serif;
+}
+/* texto racing */
+.desc{
+  background-color: rgba(0, 0, 0, 0.904);
+  color:white;
+  font-family: 'Electrolize', sans-serif;
+  font-weight: bold;
+}
+.celeste{
+  color:#50c2ec;
+  font-size: 17px;;
+}
 /* propiedad para hacer transparente una card */
 .prueba {
   background-color: rgba(0, 0, 0, 0);
@@ -180,5 +181,14 @@ font-family: 'Electrolize', sans-serif;
 .menu{
  margin-left: 10px ;
 }
-
+.col-4 {
+  width: 100%;
+  margin: 5px;
+  padding: 0px;
+}
+.col-6{
+  width: 80%;
+  margin: 5px;
+  padding: 0px;
+}
 }
