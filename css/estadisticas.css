@@ -3,86 +3,46 @@ body {
   background: center/100% url("../public/img//fondo.jpg") no-repeat fixed;
   background-repeat: repeat-y;
 }
-.twitter,
-.facebook,
-.instagram,
-.whatsapp {
-  width: 25px;
- 
-}
-li {
-    list-style: none;
+
+/* escudo */
+.log{
+  width: 100%;
 }
 .escudo {
-    width: 120px;
-    border: 2px solid black;
-    margin-top: 10px;
-    box-shadow: -2px 2px 18px 5px rgba(250,247,250,0.73);
-  }
-  
-.racing{
-    font-family: 'Graduate', cursive;
-    font-weight: bolder;
-    font-size: 40px;
-  }
-.voley{
-    font-family: 'Graduate', cursive;
-    font-weight: bolder;
-    font-size: 25px;
-  }
- 
- .nav-link ::before {
-    content: '';
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
-  }
-  .nav-link :hover::before {
-    transform: scaleX(0.5);
-  }
-  .nav-link [data-animation="center"] ::before {
-    transform-origin: center;
-  }
-  .nav-link {
-    position: relative;
-    
-    padding: 5px;
-  }
-  
+  border: 2px solid black;
+margin-top: 10px;
+box-shadow: -2px 2px 18px 5px rgba(250,247,250,0.73);
+}
+/* iconos redes */
+svg:hover
+{
+  color: #50c2ec;
+}
+/* letras logo  */
+.racing, .voley{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
 
+}
+/* efectomenu */
 
 ul {
   list-style: none;
 }
-
 a {
   color: inherit;
   text-decoration: none;
   font-family: 'Electrolize', sans-serif;
-
 }
-
-
-.menu {
-  display: flex;
-  justify-content: center;
+.menu{
+  margin-left: 70px ;
 }
-
 .menu li {
   margin-right: 70px;
 }
-
 .menu a {
   position: relative;
-  display: block;
- 
+  display: block; 
 }
 
 .menu a::before {
@@ -102,26 +62,92 @@ a {
 .menu a:hover::before {
   transform: scaleX(1);
 } 
-.card {
-  background-color: rgba(0, 0, 0, 0.829);
-  font-family: 'Graduate', cursive;
-  font-weight: bolder;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-}.card-title {
-  font-size: 30px;
-  font-family: 'Graduate', cursive;
-}
-
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
 .menu[data-animation="center"] a::before {
   transform-origin: center;
 }
+/* contenido */
+.imagen {
+  background-color: rgba(0, 0, 0, 0.829);
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(255, 255, 255);  
+}
+/* titulos */
+.card-title {
+  font-size: 30px;
+  font-family: 'Graduate', cursive;
+}
+/* propiedad para hacer transparente una card */
+.prueba {
+  background-color: rgba(0, 0, 0, 0);
+}
+.card{
+ border-style: none;
+}
+/* RESPONSIVE */ 
 
+@media only screen and (max-width: 1270px)and (min-width: 990px){
+  .mostrar{
+    display: none;
+  }
+}
+@media only screen and (max-width: 520px){
+  .mostrar{
+    display: none;
+  }  
+}
+@media only screen and (min-width: 990px) {.ancho {min-width: 300px;}
+.escudo {
+  width: 120px;
+}
+.racing{
+  font-size: 40px; 
+}
+.voley{
+  font-size: 25px;
+}
+.orden{
+  order:-1;
+}
+
+}
+
+@media only screen and (max-width: 990px){
+.escudo {
+  width: 90px;
+}
+.racing{
+  font-size: 30px;
+}
+.voley{
+  font-size: 15px;
+}
+
+.ord{
+  order: -1;
+}
+.racing{
+  width: 200px;
+}
+.voley{
+  width: 200px;
+}
+.ancho{
+  width: 200px;
+}
+.nav-link{
+  width: 130px;
+}
+.menu{
+  margin-left: 10px ;
+}
+
+}
 /* 
 body {
   margin: 0px;

@@ -5,52 +5,29 @@ body {
   
 
 }
-.twitter,
-.facebook,
-.instagram,
-.whatsapp {
-  width: 25px;
- 
-}
-li {
-    list-style: none;
+/* escudo */
+.log{
+  width: 100%;
 }
 .escudo {
-    width: 120px;
-    border: 2px solid black;
-    margin-top: 10px;
-   /* box-shadow: -2px 3px 26px 13px rgba(250,247,250,0.73);box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.891), 0 6px 20px 0 rgba(253, 253, 253, 0.857); */
-   box-shadow: -2px 2px 18px 5px rgba(250,247,250,0.73);
-  }
-  .resultado {
-    width: 350px;
-    height: 515px;
-    
-  }
-  .res {
+     border: 2px solid black;
+  margin-top: 10px;
+  box-shadow: -2px 2px 18px 5px rgba(250,247,250,0.73);
+}
+/* iconos redes */
+svg:hover
+{
+  color: #50c2ec;
+}
+/* letras logo  */
+.racing, .voley{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
 
-    height: 500px;
-
-  } 
-   /*.imgnormalizada {
-    height: 600px;
-  }
-  .equipo{
-    height: 800px;
-  } */
-  .racing{
-    font-family: 'Graduate', cursive;
-    font-weight: bolder;
-    font-size: 40px;
-  }
-  .voley{
-    font-family: 'Graduate', cursive;
-    font-weight: bolder;
-    font-size: 25px;
-  }
+}
 
 
-
+/* efectomenu */
 ul {
   list-style: none;
 }
@@ -59,25 +36,20 @@ a {
   color: inherit;
   text-decoration: none;
   font-family: 'Electrolize', sans-serif;
-
 }
-
-
-.menu {
-  display: flex;
-  justify-content: center;
+.menu{
+  margin-left: 70px ;
 }
-
 .menu li {
   margin-right: 70px;
 }
-
+  
 .menu a {
   position: relative;
   display: block;
- 
+  
 }
-
+  
 .menu a::before {
   content: '';
   position: absolute;
@@ -85,18 +57,18 @@ a {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(to right, #50c2ec, #ffffff, #50c2ec);
+  background: linear-gradient(to right, #26B3E8, #ffffff, #26B3E8);
   z-index: 1;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
 }
-
+  
 .menu a:hover::before {
   transform: scaleX(1);
 }
 
-
+  
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -104,6 +76,20 @@ a {
 .menu[data-animation="center"] a::before {
   transform-origin: center;
 }
+ /* tabla resultados */
+.resultado {
+  width: 350px;
+  height: 515px;  
+}
+.resultados{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+.res {
+  height: 500px;
+} 
+/* titulo */
 
 .tit{
   font-family: 'Graduate', cursive;
@@ -111,27 +97,98 @@ a {
   font-size: 25px;
   color: rgb(255, 255, 255);
 }
-.resultados{
-  font-family: 'Graduate', cursive;
-  font-weight: bolder;
-  color: rgb(255, 255, 255);
-}
+/* profes */
 .profesores{
   background-color: rgba(0, 0, 0, 0.829);
-
 }
-.card{
+.tarjeta{
   background-color: rgba(6, 175, 175, 0.856);
   color:white;
   font-family: 'Electrolize', sans-serif;
 }
+/* texto racing */
 .desc{
   background-color: rgba(0, 0, 0, 0.904);
   color:white;
   font-family: 'Electrolize', sans-serif;
   font-weight: bold;
 }
-.racing{
+.celeste{
   color:#50c2ec;
   font-size: 17px;;
+}
+/* propiedad para hacer transparente una card */
+.prueba {
+  background-color: rgba(0, 0, 0, 0);
+}
+.card{
+ border-style: none;
+}
+/* RESPONSIVE */ 
+
+@media only screen and (max-width: 1270px)and (min-width: 990px){
+ .mostrar{
+   display: none;
+ }
+}
+@media only screen and (max-width: 520px){
+ .mostrar{
+   display: none;
+ }  
+}
+@media only screen and (min-width: 990px) {.ancho {min-width: 300px;}
+.escudo {
+ width: 120px;
+}
+.racing{
+ font-size: 40px; 
+}
+.voley{
+ font-size: 25px;
+}
+.orden{
+ order:-1;
+}
+
+}
+
+@media only screen and (max-width: 990px){
+.escudo {
+ width: 90px;
+}
+.racing{
+ font-size: 30px;
+}
+.voley{
+ font-size: 15px;
+}
+
+.ord{
+ order: -1;
+}
+.racing{
+ width: 200px;
+}
+.voley{
+ width: 200px;
+}
+.ancho{
+ width: 200px;
+}
+.nav-link{
+ width: 130px;
+}
+.menu{
+ margin-left: 10px ;
+}
+.col-4 {
+  width: 100%;
+  margin: 5px;
+  padding: 0px;
+}
+.col-6{
+  width: 80%;
+  margin: 5px;
+  padding: 0px;
+}
 }
