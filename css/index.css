@@ -1,10 +1,10 @@
-body {
+/* body {
   margin: 0px;
   background: center/100% url("../public/img//fondo.jpg") no-repeat fixed; 
   background-repeat: repeat-y;
   
 
-}
+} */
 /* escudo */
 .log{
   width: 100%;
@@ -20,11 +20,7 @@ svg:hover
   color: #50c2ec;
 }
 /* letras logo  */
-.racing, .voley{
-  font-family: 'Graduate', cursive;
-  font-weight: bolder;
 
-}
 
 
 /* efectomenu */
@@ -177,7 +173,7 @@ a {
 }
 .nav-link{
  width: 130px;
-}
+} 
 .menu{
  margin-left: 10px ;
 }

@@ -1,0 +1,7 @@
+$letra-titulo: 'Graduate', cursive;
+$letra-texto:  'Electrolize', sans-serif;
+$color-texto: white;
+
+@mixin texto($tamano) {
+    font-size: $tamano;    
+}
