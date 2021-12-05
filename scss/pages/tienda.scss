@@ -1,0 +1,41 @@
+@import "variables/variables";
+
+.indumentaria {
+  @include texto(30px);
+  font-family: $letra-titulo;
+  color: $color-texto;
+}
+
+/* tarjetas de camiseta */
+
+.camiseta {
+  background-color: rgba(6, 175, 175, 0.856);
+  .card-body {
+    background-color: rgba(6, 175, 175, 0.856);
+    border: none;
+    font-family: $letra-texto;
+  }
+}
+.camiseta:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+
+  border-radius: 20px;
+  transition-duration: 1s;
+}
+.btn {
+  background-color: rgba(6, 175, 175, 0.96);
+  color: $color-texto;
+  font-family: $letra-texto;
+}
+.bg {
+  background-color: rgba(0, 0, 0, 0.837);
+  .titulo {
+    @include texto(30px);
+  }
+
+  .info {
+    font-family: $letra-texto;
+  }
+}
