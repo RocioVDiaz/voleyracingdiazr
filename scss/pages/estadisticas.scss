@@ -1,0 +1,10 @@
+@import "variables/variables";
+
+/* contenido */
+.imagen {
+    @include texto (30px);
+    background-color: rgba(0, 0, 0, 0.829);
+    font-family: $letra-titulo;
+    font-weight: bolder;    
+    color: $color-texto; 
+  }

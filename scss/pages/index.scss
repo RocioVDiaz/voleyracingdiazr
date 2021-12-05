@@ -1,0 +1,41 @@
+@import "media/media.scss";
+$alto: 500px;
+
+/* operaciones */
+.resultado {
+  width: ($alto/2)+100;
+  height: $alto + 15;
+  .res {
+    height: $alto;
+  }
+}
+.resultados {
+  font-family: $letra-titulo;
+  font-weight: bolder;
+  color: $color-texto;
+}
+/* mixins */
+.profesores {
+  background-color: rgba(0, 0, 0, 0.829);
+  .tit {
+    @include texto(40px);
+    font-family: $letra-titulo;
+    font-weight: bolder;
+    color: $color-texto;
+  }
+  .tarjeta {
+    background-color: rgba(6, 175, 175, 0.856);
+    color: $color-texto;
+    font-family: $letra-texto;
+  }
+}
+.desc {
+  background-color: rgba(0, 0, 0, 0.904);
+  color: $color-texto;
+  font-family: $color-texto;
+  font-weight: bold;
+  .celeste {
+    @include texto(17px);
+    color: #50c2ec;
+  }
+}

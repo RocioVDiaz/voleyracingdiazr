@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1333px) and (min-width: 990px) {
+  .mostrar {
+    display: none;
+  }
+  .menu {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .mostrar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .ancho {
+    min-width: 300px;
+  }
+  .escudo {
+    width: 120px;
+  }
+  .racing {
+    font-size: 40px;
+  }
+  .voley {
+    font-size: 25px;
+  }
+  .orden {
+    order: -1;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .escudo {
+    width: 90px;
+  }
+  .racing {
+    font-size: 30px;
+  }
+  .voley {
+    font-size: 15px;
+  }
+
+  .ord {
+    order: -1;
+  }
+  .racing {
+    width: 200px;
+  }
+  .voley {
+    width: 200px;
+  }
+  .ancho {
+    width: 200px;
+  }
+  .nav-link {
+    width: 130px;
+  }
+  .menu {
+    margin-left: 10px;
+  }
+  .col-4 {
+    width: 100%;
+    margin: 5px;
+    padding: 0px;
+  }
+  .col-6 {
+    width: 80%;
+    margin: 5px;
+    padding: 0px;
+  }
+}
